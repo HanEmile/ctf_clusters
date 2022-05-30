@@ -44,6 +44,12 @@ digraph teams {
     "perfect blue" [href="https://ctftime.org/team/53802"];
     "r00timentary" [href="https://ctftime.org/team/32783"];
     "Samsung Research" [href=""];
+
+    // Balsn.217@TSJ.tw
+    "Balsn" [href="https://ctftime.org/team/16978"];
+    "217" [href="https://ctftime.org/team/5160"];
+    "TSJ" [href="https://ctftime.org/team/150366"];
+    "HITCON" [href="https://ctftime.org/team/8299"];
   }
 
   // primary edges
@@ -84,6 +90,12 @@ digraph teams {
     "perfect blue" ->"perfect r✪✪✪t";
     "r00timentary" -> "perfect r✪✪✪t";
     "Samsung Research" -> "perfect r✪✪✪t";
+
+    // Balsn.217@TSJ.tw
+    "Balsn" -> "Balsn.217@TSJ.tw";
+    "217" -> "Balsn.217@TSJ.tw";
+    "TSJ" -> "Balsn.217@TSJ.tw";
+    "HITCON" -> "Balsn.217@TSJ.tw";
   }
 
 }
