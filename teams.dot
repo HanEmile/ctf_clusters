@@ -39,6 +39,7 @@ digraph teams {
     "FAUST" [href="https://ctftime.org/team/550"];
     "WizardsOfDos" [href="https://ctftime.org/team/561"];
     "Squareroots" [href="https://ctftime.org/team/554"];
+    "saarsec" [href="https://ctftime.org/team/15337"];
 
     // perfect rooot
     "perfect blue" [href="https://ctftime.org/team/53802"];
@@ -95,6 +96,7 @@ digraph teams {
     "FAUST" -> "Sauercloud";   
     "WizardsOfDos" -> "Sauercloud";   
     "Squareroots" -> "Sauercloud";   
+    "saarsec" -> "Sauercloud";   
 
     // perfect rooot
     "perfect blue" ->"perfect r✪✪✪t";
