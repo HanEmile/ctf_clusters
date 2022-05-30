@@ -50,6 +50,10 @@ digraph teams {
     "217" [href="https://ctftime.org/team/5160"];
     "TSJ" [href="https://ctftime.org/team/150366"];
     "HITCON" [href="https://ctftime.org/team/8299"];
+
+    // PTB_WTL
+    "PwnThyBytes" [href="https://ctftime.org/team/59199"];
+    "WreckTheLine" [href="https://ctftime.org/team/57908"];
   }
 
   // primary edges
@@ -96,6 +100,10 @@ digraph teams {
     "217" -> "Balsn.217@TSJ.tw";
     "TSJ" -> "Balsn.217@TSJ.tw";
     "HITCON" -> "Balsn.217@TSJ.tw";
+
+    // PTB_WTL
+    "PwnThyBytes" -> "PTB_WTL";
+    "WreckTheLine" -> "PTB_WTL";
   }
 
 }
