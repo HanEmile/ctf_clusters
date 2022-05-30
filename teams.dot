@@ -39,6 +39,11 @@ digraph teams {
     "FAUST" [href="https://ctftime.org/team/550"];
     "WizardsOfDos" [href="https://ctftime.org/team/561"];
     "Squareroots" [href="https://ctftime.org/team/554"];
+
+    // perfect rooot
+    "perfect blue" [href="https://ctftime.org/team/53802"];
+    "r00timentary" [href="https://ctftime.org/team/32783"];
+    "Samsung Research" [href=""];
   }
 
   // primary edges
@@ -74,6 +79,11 @@ digraph teams {
     "FAUST" -> "Sauercloud";   
     "WizardsOfDos" -> "Sauercloud";   
     "Squareroots" -> "Sauercloud";   
+
+    // perfect rooot
+    "perfect blue" ->"perfect r✪✪✪t";
+    "r00timentary" -> "perfect r✪✪✪t";
+    "Samsung Research" -> "perfect r✪✪✪t";
   }
 
 }
