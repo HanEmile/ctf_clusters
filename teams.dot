@@ -61,6 +61,12 @@ digraph teams {
     "RicercaSec" [href=""];
     "binja" [href="https://ctftime.org/team/9083"];
     "TokyoWesterns" [href="https://ctftime.org/team/12599"];
+
+    // Straw Hat
+    "Nu1L" [href="https://ctftime.org/team/19208"];
+    "w&m" [href="https://ctftime.org/team/54666"];
+    "Super Rookies" [href=""];
+    "<Experienced independent sailors>" [href=""];
   }
 
   // primary edges
@@ -118,7 +124,12 @@ digraph teams {
     "RicercaSec" -> "./V /home/r/.bin/tw";
     "binja" -> "./V /home/r/.bin/tw";
     "TokyoWesterns" -> "./V /home/r/.bin/tw";
-  }
 
+    // Straw Hat
+    "Nu1L" -> "Straw Hat";
+    "w&m" -> "Straw Hat";
+    "Super Rookies" -> "Straw Hat";
+    "<Experienced independent sailors>" -> "Straw Hat";
+  }
 }
 
