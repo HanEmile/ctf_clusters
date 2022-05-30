@@ -71,6 +71,11 @@ digraph teams {
     // DiceGuesser
     "DiceGang" [href="https://ctftime.org/team/109452"];
     "SuperGuesser" [href="https://ctftime.org/team/130817"];
+
+    // StarBugs
+    "CodeRed" [href="https://ctftime.org/team/4004"];
+    "GYG" [href="https://ctftime.org/team/33362"];
+    "SED" [href="https://ctftime.org/team/70332"];
   }
 
   // primary edges
@@ -138,6 +143,11 @@ digraph teams {
     // DiceGuesser
     "DiceGang" -> "DiceGuesser";
     "SuperGuesser" -> "DiceGuesser";
+
+    // StarBugs
+    "CodeRed" -> "StarBugs";
+    "GYG" -> "StarBugs";
+    "SED" -> "StarBugs";
   }
 }
 
