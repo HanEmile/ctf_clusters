@@ -2,7 +2,7 @@
 
 visualizing CTF clusters (teams playing together at DEFCON quals 2022)
 
-<img src="./teams.svg"></img>
+<object type="image/svg+xml" data="./teams.svg"></object>
 
 ## building
 
