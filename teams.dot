@@ -67,6 +67,10 @@ digraph teams {
     "w&m" [href="https://ctftime.org/team/54666"];
     "Super Rookies" [href=""];
     "<Experienced independent sailors>" [href=""];
+
+    // DiceGuesser
+    "DiceGang" [href="https://ctftime.org/team/109452"];
+    "SuperGuesser" [href="https://ctftime.org/team/130817"];
   }
 
   // primary edges
@@ -130,6 +134,10 @@ digraph teams {
     "w&m" -> "Straw Hat";
     "Super Rookies" -> "Straw Hat";
     "<Experienced independent sailors>" -> "Straw Hat";
+
+    // DiceGuesser
+    "DiceGang" -> "DiceGuesser";
+    "SuperGuesser" -> "DiceGuesser";
   }
 }
 
