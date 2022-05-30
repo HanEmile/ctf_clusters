@@ -291,7 +291,7 @@
 <!-- Red Rocket -->
 <g id="node20" class="node">
 <title>Red Rocket</title>
-<g id="a_node20"><a xlink:href="https://allesctf.net/" xlink:title="Red Rocket">
+<g id="a_node20"><a xlink:href="https://ctftime.org/team/48677" xlink:title="Red Rocket">
 <ellipse fill="none" stroke="#4285f4" cx="325.28" cy="-817.71" rx="56.59" ry="18"/>
 <text text-anchor="middle" x="325.28" y="-814.01" font-family="JetBrains Mono" font-size="14.00" fill="#4285f4">Red Rocket</text>
 </a>
