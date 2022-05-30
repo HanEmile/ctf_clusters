@@ -54,6 +54,12 @@ digraph teams {
     // PTB_WTL
     "PwnThyBytes" [href="https://ctftime.org/team/59199"];
     "WreckTheLine" [href="https://ctftime.org/team/57908"];
+
+    // ./V /home/r/.bin/tw 
+    "./Vespiary" [href="https://ctftime.org/team/80092"];
+    "RicercaSec" [href=""];
+    "binja" [href="https://ctftime.org/team/9083"];
+    "TokyoWesterns" [href="https://ctftime.org/team/12599"];
   }
 
   // primary edges
@@ -104,6 +110,12 @@ digraph teams {
     // PTB_WTL
     "PwnThyBytes" -> "PTB_WTL";
     "WreckTheLine" -> "PTB_WTL";
+
+    // ./V /home/r/.bin/tw
+    "./Vespiary" -> "./V /home/r/.bin/tw";
+    "RicercaSec" -> "./V /home/r/.bin/tw";
+    "binja" -> "./V /home/r/.bin/tw";
+    "TokyoWesterns" -> "./V /home/r/.bin/tw";
   }
 
 }
