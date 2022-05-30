@@ -1,0 +1,80 @@
+digraph teams {
+  node [fontname = "JetBrains Mono"];
+  overlap = false;
+  splines = polyline;
+
+  DEFCON_QUALS [style="bold" href="https://quals.2022.nautilus.institute/dashboard"];
+
+  // team clusters (red)
+  subgraph {
+    node [color="#db4437" fontcolor="#db4437"];
+    "perfect r✪✪✪t" [href="https://ctftime.org/team/176403"]
+    "Balsn.217@TSJ.tw" [href="https://ctftime.org/team/189868"]
+    "The Duck" [href="https://ctftime.org/team/111501"]
+    "Sauercloud" [href="https://ctftime.org/team/54748"]
+    "Water Paddler" [href="https://ctftime.org/team/155019"]
+    "PTB_WTL" [href="https://ctftime.org/team/119975"]
+    "./V /home/r/.bin/tw" [href="https://ctftime.org/team/189869"]
+    "Straw Hat" [href="https://ctftime.org/team/19208"]
+    "PPP" [href="https://ctftime.org/team/284"]
+    "Katzebin" [href="https://ctftime.org/team/141539"]
+    "StarBugs" [href="https://ctftime.org/team/152239"]
+    "Shellphish" [href="https://ctftime.org/team/285"]
+    "r3kapig" [href="https://ctftime.org/team/58979"]
+    "DiceGuesser" [href="https://ctftime.org/team/182504"]
+    "OSUSEC" [href="https://ctftime.org/team/12858"]
+  }
+
+  // individual teams (blue)
+  subgraph {
+    node [color="#4285f4" fontcolor="#4285f4"];
+
+    // Sauercloud (Germany)
+    "KITCTF" [href="https://ctftime.org/team/7221"];
+    "Eat Sleep Pwn Repeat" [href="https://ctftime.org/team/15712"];
+    "Flux Fingers" [href="https://ctftime.org/team/551"];
+    "Red Rocket" [href="https://allesctf.net/"];
+    "Alles!" [href="https://ctftime.org/team/18419"];
+    "ENOFLAG" [href="https://ctftime.org/team/1438"];
+    "FAUST" [href="https://ctftime.org/team/550"];
+    "WizardsOfDos" [href="https://ctftime.org/team/561"];
+    "Squareroots" [href="https://ctftime.org/team/554"];
+  }
+
+  // primary edges
+  subgraph {
+    "perfect r✪✪✪t" -> DEFCON_QUALS [style="bold"];
+    "Balsn.217@TSJ.tw" -> DEFCON_QUALS [style="bold"];
+    "The Duck" -> DEFCON_QUALS [style="bold"];
+    "Sauercloud" -> DEFCON_QUALS [style="bold"];
+    "Water Paddler" -> DEFCON_QUALS [style="bold"];
+    "PTB_WTL" -> DEFCON_QUALS [style="bold"];
+    "./V /home/r/.bin/tw" -> DEFCON_QUALS [style="bold"];
+    "Straw Hat" -> DEFCON_QUALS [style="bold"];
+    "PPP" -> DEFCON_QUALS [style="bold"];
+    "Katzebin" -> DEFCON_QUALS [style="bold"];
+    "StarBugs" -> DEFCON_QUALS [style="bold"];
+    "Shellphish" -> DEFCON_QUALS [style="bold"];
+    "r3kapig" -> DEFCON_QUALS [style="bold"];
+    "DiceGuesser" -> DEFCON_QUALS [style="bold"];
+    "OSUSEC" -> DEFCON_QUALS [style="bold"];
+
+  }
+
+  // secondary edges (teams to clusters)
+  subgraph {
+    edge [weight=1 style="dashed" color="grey"];
+    // Sauercloud (Germany)
+    "KITCTF" -> "Sauercloud";
+    "Eat Sleep Pwn Repeat" -> "Sauercloud";   
+    "Flux Fingers" -> "Sauercloud";   
+    "Red Rocket" -> "Sauercloud";   
+    "Alles!" -> "Sauercloud";   
+    "ENOFLAG" -> "Sauercloud";   
+    "FAUST" -> "Sauercloud";   
+    "WizardsOfDos" -> "Sauercloud";   
+    "Squareroots" -> "Sauercloud";   
+  }
+
+}
+
