@@ -97,6 +97,18 @@ digraph teams {
     "Markak_" [href="https://twitter.com/Markak_"];
   }
 
+  // teams of the above (green)
+  subgraph {
+    node [color="#228B22" fontcolor="#228B22"];
+
+    // TSJ
+    "10sec" [href="https://ctftime.org/team/61603"];
+    "BambooFox" [href="https://ctftime.org/team/9871"];
+    "Goburin'" [href="https://ctftime.org/team/111613"];
+    "NCtfU" [href="https://ctftime.org/team/139610"];
+    "Ret2NOP" [href="https://ctftime.org/team/139617"];
+  }
+
   // primary edges
   subgraph {
     "perfect r✪✪✪t" -> DEFCON_QUALS [style="bold"];
@@ -186,6 +198,17 @@ digraph teams {
     "LeoQ7_" -> {"Super Rookies", "Nu1L"};
     "wupco1996" -> {"Super Rookies", "Nu1L"};
     "Markak_" -> {"Super Rookies", "Nu1L"};
+  }
+
+  // tertiary edges
+  subgraph {
+    edge [weight=1 style="dashed" color="grey"];
+    // TSJ
+    "10sec" -> "TSJ";
+    "BambooFox" -> "TSJ";
+    "Goburin'" -> "TSJ";
+    "NCtfU" -> "TSJ";
+    "Ret2NOP" -> "TSJ";
   }
 }
 
