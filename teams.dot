@@ -23,6 +23,7 @@ digraph teams {
     "r3kapig" [href="https://ctftime.org/team/58979"]
     "DiceGuesser" [href="https://ctftime.org/team/182504"]
     "OSUSEC" [href="https://ctftime.org/team/12858"]
+    "organizers" [href="https://ctftime.org/team/42934"]
   }
 
   // individual teams (blue)
@@ -85,6 +86,14 @@ digraph teams {
     // r3kapig
     "Eur3kA" [href="https://ctftime.org/team/48512"];
     "FlappyPig" [href="https://ctftime.org/team/12692"];
+
+    // organizers
+    "secret.club" [href=""];
+    "polyflag" [href="https://ctftime.org/team/112451"];
+    "excusemewtf" [href="https://ctftime.org/team/104977/"];
+    "the cr0wn" [href="https://ctftime.org/team/48976/"];
+    "flagbot" [href="https://ctftime.org/team/34878"];
+    "polygl0ts" [href="https://ctftime.org/team/53791"];
   }
 
   // individual people (black)
@@ -111,6 +120,7 @@ digraph teams {
 
   // primary edges
   subgraph {
+    edge [len=3];
     "perfect r✪✪✪t" -> DEFCON_QUALS [style="bold"];
     "Balsn.217@TSJ.tw" -> DEFCON_QUALS [style="bold"];
     "The Duck" -> DEFCON_QUALS [style="bold"];
@@ -126,7 +136,7 @@ digraph teams {
     "r3kapig" -> DEFCON_QUALS [style="bold"];
     "DiceGuesser" -> DEFCON_QUALS [style="bold"];
     "OSUSEC" -> DEFCON_QUALS [style="bold"];
-
+    "organizers" -> DEFCON_QUALS [style="bold"];
   }
 
   // secondary edges (teams to clusters)
@@ -188,6 +198,12 @@ digraph teams {
     // r3kapig
     "Eur3kA" -> "r3kapig";
     "FlappyPig" -> "r3kapig";
+
+    // organizers
+    "secret.club" -> "organizers";
+    "polyflag" -> "organizers";
+    "excusemewtf" -> "organizers";
+    "the cr0wn" -> "organizers";
   }
 
 
@@ -200,7 +216,7 @@ digraph teams {
     "Markak_" -> {"Super Rookies", "Nu1L"};
   }
 
-  // tertiary edges
+  // quadinary (how do you call this?) edges (smaller teams to larger teams)
   subgraph {
     edge [weight=1 style="dashed" color="grey"];
     // TSJ
@@ -209,6 +225,10 @@ digraph teams {
     "Goburin'" -> "TSJ";
     "NCtfU" -> "TSJ";
     "Ret2NOP" -> "TSJ";
+
+    // polyflag
+    "flagbot" -> "polyflag";
+    "polygl0ts" -> "polyflag";
   }
 }
 
