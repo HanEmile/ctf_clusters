@@ -65,9 +65,8 @@ digraph teams {
 
     // Straw Hat
     "Nu1L" [href="https://ctftime.org/team/19208"];
-    "w&m" [href="https://ctftime.org/team/54666"];
-    "Super Rookies" [href=""];
-    "<Experienced independent sailors>" [href=""];
+    "W&M" [href="https://ctftime.org/team/54666"];
+    "<Independent researchers>" [href=""];
 
     // DiceGuesser
     "DiceGang" [href="https://ctftime.org/team/109452"];
@@ -97,11 +96,6 @@ digraph teams {
   // individual people (black)
   subgraph {
     node [color="#000000" fontcolor="#000000"];
-
-    // Super Rookies
-    "LeoQ7_" [href="https://twitter.com/LeoQ7_"];
-    "wupco1996" [href="https://twitter.com/wupco1996"];
-    "Markak_" [href="https://twitter.com/Markak_"];
   }
 
   // teams of the above (green)
@@ -179,9 +173,8 @@ digraph teams {
 
     // Straw Hat
     "Nu1L" -> "Straw Hat";
-    "w&m" -> "Straw Hat";
-    "Super Rookies" -> "Straw Hat";
-    "<Experienced independent sailors>" -> "Straw Hat";
+    "W&M" -> "Straw Hat";
+    "<Independent researchers>" -> "Straw Hat";
 
     // DiceGuesser
     "DiceGang" -> "DiceGuesser";
@@ -212,10 +205,6 @@ digraph teams {
   // ternary edges (people to teams)
   subgraph {
     edge [weight=1 style="dashed" color="grey"];
-
-    "LeoQ7_" -> {"Super Rookies", "Nu1L"};
-    "wupco1996" -> {"Super Rookies", "Nu1L"};
-    "Markak_" -> {"Super Rookies", "Nu1L"};
   }
 
   // quadinary (how do you call this?) edges (smaller teams to larger teams)
