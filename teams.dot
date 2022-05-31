@@ -92,8 +92,6 @@ digraph teams {
     "polyflag" [href="https://ctftime.org/team/112451"];
     "excusemewtf" [href="https://ctftime.org/team/104977/"];
     "the cr0wn" [href="https://ctftime.org/team/48976/"];
-    "flagbot" [href="https://ctftime.org/team/34878"];
-    "polygl0ts" [href="https://ctftime.org/team/53791"];
   }
 
   // individual people (black)
@@ -116,6 +114,10 @@ digraph teams {
     "Goburin'" [href="https://ctftime.org/team/111613"];
     "NCtfU" [href="https://ctftime.org/team/139610"];
     "Ret2NOP" [href="https://ctftime.org/team/139617"];
+
+    // polyflag
+    "flagbot" [href="https://ctftime.org/team/34878"];
+    "polygl0ts" [href="https://ctftime.org/team/53791"];
   }
 
   // primary edges
