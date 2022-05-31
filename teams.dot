@@ -76,6 +76,25 @@ digraph teams {
     "CodeRed" [href="https://ctftime.org/team/4004"];
     "GYG" [href="https://ctftime.org/team/33362"];
     "SED" [href="https://ctftime.org/team/70332"];
+
+    // Katzebin
+    "AAA" [href=""];
+    "Oops" [href="https://ctftime.org/team/4419"];
+    "Tencent" [href="https://ctftime.org/team/32578"];
+
+    // r3kapig
+    "Eur3kA" [href="https://ctftime.org/team/48512"];
+    "FlappyPig" [href="https://ctftime.org/team/12692"];
+  }
+
+  // individual people (black)
+  subgraph {
+    node [color="#000000" fontcolor="#000000"];
+
+    // Super Rookies
+    "LeoQ7_" [href="https://twitter.com/LeoQ7_"];
+    "wupco1996" [href="https://twitter.com/wupco1996"];
+    "Markak_" [href="https://twitter.com/Markak_"];
   }
 
   // primary edges
@@ -148,6 +167,25 @@ digraph teams {
     "CodeRed" -> "StarBugs";
     "GYG" -> "StarBugs";
     "SED" -> "StarBugs";
+
+    // Katzebin
+    "AAA" -> "Katzebin";
+    "Oops" -> "Katzebin";
+    "Tencent" -> "Katzebin";
+
+    // r3kapig
+    "Eur3kA" -> "r3kapig";
+    "FlappyPig" -> "r3kapig";
+  }
+
+
+  // ternary edges (people to teams)
+  subgraph {
+    edge [weight=1 style="dashed" color="grey"];
+
+    "LeoQ7_" -> {"Super Rookies", "Nu1L"};
+    "wupco1996" -> {"Super Rookies", "Nu1L"};
+    "Markak_" -> {"Super Rookies", "Nu1L"};
   }
 }
 
