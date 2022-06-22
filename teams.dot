@@ -114,6 +114,13 @@ digraph teams {
 
     // ESPR
     "StratumAuhuur" [href="https://ctftime.org/team/5317"];
+
+    // DiceGang
+    "Sice Squad" [href="https://ctftime.org/team/55508"]
+    "redpwn" [href="https://ctftime.org/team/59759"]
+    "b1c" [href="https://ctftime.org/team/36439"]
+    "kernel sanders" [href="https://ctftime.org/team/397"]
+    "sigpwny" [href="https://ctftime.org/team/27763"]
   }
 
   // level 4
@@ -231,6 +238,13 @@ digraph teams {
     // ESPR
     "KITCTF" -> "Eat Sleep Pwn Repeat";
     "StratumAuhuur" -> "Eat Sleep Pwn Repeat";
+
+    // Dice Gang
+    "Sice Squad"-> "DiceGang"
+    "redpwn"-> "DiceGang"
+    "b1c"-> "DiceGang"
+    "kernel sanders"-> "DiceGang"
+    "sigpwny"-> "DiceGang"
   }
 
   // level 4 -> level 3
