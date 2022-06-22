@@ -3,8 +3,10 @@ digraph teams {
   overlap = false;
   splines = polyline;
 
+  // level 0
   DEFCON_QUALS [style="bold" href="https://quals.2022.nautilus.institute/dashboard"];
 
+  // level 1
   // team clusters (red)
   subgraph {
     node [color="#db4437" fontcolor="#db4437"];
@@ -26,6 +28,7 @@ digraph teams {
     "organizers" [href="https://ctftime.org/team/42934"]
   }
 
+  // level 2
   // individual teams (blue)
   subgraph {
     node [color="#4285f4" fontcolor="#4285f4"];
@@ -93,11 +96,7 @@ digraph teams {
     "the cr0wn" [href="https://ctftime.org/team/48976/"];
   }
 
-  // individual people (black)
-  subgraph {
-    node [color="#000000" fontcolor="#000000"];
-  }
-
+  // level 3
   // teams of the above (green)
   subgraph {
     node [color="#228B22" fontcolor="#228B22"];
@@ -112,8 +111,20 @@ digraph teams {
     // polyflag
     "flagbot" [href="https://ctftime.org/team/34878"];
     "polygl0ts" [href="https://ctftime.org/team/53791"];
+
+    // ESPR
+    "StratumAuhuur" [href="https://ctftime.org/team/5317"];
   }
 
+  // level 4
+  // teams of the teams of the teams of the clusters (this is getting wild)
+  subgraph {
+    node [color="#12b2af" fontcolor="#000000"];
+    "CCCAC" [href="https://ctftime.org/team/555"];
+    "Stratum0" [href="https://ctftime.org/team/1684"];
+  }
+
+  // level 1 -> level 0
   // primary edges
   subgraph {
     edge [len=3];
@@ -135,6 +146,7 @@ digraph teams {
     "organizers" -> DEFCON_QUALS [style="bold"];
   }
 
+  // level 2 -> level 1
   // secondary edges (teams to clusters)
   subgraph {
     edge [weight=1 style="dashed" color="grey"];
@@ -201,13 +213,8 @@ digraph teams {
     "the cr0wn" -> "organizers";
   }
 
-
+  // level 3 -> level 2
   // ternary edges (people to teams)
-  subgraph {
-    edge [weight=1 style="dashed" color="grey"];
-  }
-
-  // quadinary (how do you call this?) edges (smaller teams to larger teams)
   subgraph {
     edge [weight=1 style="dashed" color="grey"];
     // TSJ
@@ -220,6 +227,20 @@ digraph teams {
     // polyflag
     "flagbot" -> "polyflag";
     "polygl0ts" -> "polyflag";
+
+    // ESPR
+    "KITCTF" -> "Eat Sleep Pwn Repeat";
+    "StratumAuhuur" -> "Eat Sleep Pwn Repeat";
+  }
+
+  // level 4 -> level 3
+  // quadinary (how do you call this?) edges
+  subgraph {
+    edge [weight=1 style="dashed" color="grey"];
+
+    // StratumAuhuur
+    "Stratum0" -> "StratumAuhuur";
+    "CCCAC" -> "StratumAuhuur";
   }
 }
 
