@@ -121,6 +121,8 @@ digraph teams {
     "b1c" [href="https://ctftime.org/team/36439"]
     "kernel sanders" [href="https://ctftime.org/team/397"]
     "sigpwny" [href="https://ctftime.org/team/27763"]
+    "crusaders of rust" [href="https://ctftime.org/team/132628/"]
+    "CCC" [href="https://ctftime.org/team/114056/"]
   }
 
   // level 4
@@ -245,6 +247,8 @@ digraph teams {
     "b1c"-> "DiceGang"
     "kernel sanders"-> "DiceGang"
     "sigpwny"-> "DiceGang"
+    "crusaders of rust" -> "DiceGang"
+    "CCC" -> "DiceGang";
   }
 
   // level 4 -> level 3
