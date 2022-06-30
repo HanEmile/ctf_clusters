@@ -38,7 +38,7 @@ digraph teams {
     "Eat Sleep Pwn Repeat" [href="https://ctftime.org/team/15712"];
     "Flux Fingers" [href="https://ctftime.org/team/551"];
     "Red Rocket" [href="https://ctftime.org/team/48677"];
-    "Alles!" [href="https://ctftime.org/team/18419"];
+    "ALLES!" [href="https://ctftime.org/team/18419"];
     "ENOFLAG" [href="https://ctftime.org/team/1438"];
     "FAUST" [href="https://ctftime.org/team/550"];
     "WizardsOfDos" [href="https://ctftime.org/team/561"];
@@ -162,7 +162,7 @@ digraph teams {
     "Eat Sleep Pwn Repeat" -> "Sauercloud";   
     "Flux Fingers" -> "Sauercloud";   
     "Red Rocket" -> "Sauercloud";   
-    "Alles!" -> "Sauercloud";   
+    "ALLES!" -> "Sauercloud";   
     "ENOFLAG" -> "Sauercloud";   
     "FAUST" -> "Sauercloud";   
     "WizardsOfDos" -> "Sauercloud";   
