@@ -4,7 +4,7 @@ digraph teams {
   splines = polyline;
 
   // level 0
-  DEFCON_QUALS [style="bold" href="https://quals.2022.nautilus.institute/dashboard"];
+  DEFCON [style="bold" href="https://nautilus.institute/"];
 
   // level 1
   // team clusters (red)
@@ -12,13 +12,12 @@ digraph teams {
     node [color="#db4437" fontcolor="#db4437"];
     "perfect r✪✪✪t" [href="https://ctftime.org/team/176403"]
     "Balsn.217@TSJ.tw" [href="https://ctftime.org/team/189868"]
-    "The Duck" [href="https://ctftime.org/team/111501"]
     "Sauercloud" [href="https://ctftime.org/team/54748"]
     "Water Paddler" [href="https://ctftime.org/team/155019"]
     "PTB_WTL" [href="https://ctftime.org/team/119975"]
     "./V /home/r/.bin/tw" [href="https://ctftime.org/team/189869"]
     "Straw Hat" [href="https://ctftime.org/team/19208"]
-    "PPP" [href="https://ctftime.org/team/284"]
+    "MMM" [href="https://ctftime.org/team/193591"]
     "Katzebin" [href="https://ctftime.org/team/141539"]
     "StarBugs" [href="https://ctftime.org/team/152239"]
     "Shellphish" [href="https://ctftime.org/team/285"]
@@ -94,6 +93,11 @@ digraph teams {
     "polyflag" [href="https://ctftime.org/team/112451"];
     "excusemewtf" [href="https://ctftime.org/team/104977/"];
     "the cr0wn" [href="https://ctftime.org/team/48976/"];
+
+    // MMM
+    "PPP" [href="https://ctftime.org/team/284"];
+    "The Duck" [href="https://ctftime.org/team/111501"];
+    "Maple Bacon" [href="https://ctftime.org/team/73723"];
   }
 
   // level 3
@@ -137,22 +141,21 @@ digraph teams {
   // primary edges
   subgraph {
     edge [len=3];
-    "perfect r✪✪✪t" -> DEFCON_QUALS [style="bold"];
-    "Balsn.217@TSJ.tw" -> DEFCON_QUALS [style="bold"];
-    "The Duck" -> DEFCON_QUALS [style="bold"];
-    "Sauercloud" -> DEFCON_QUALS [style="bold"];
-    "Water Paddler" -> DEFCON_QUALS [style="bold"];
-    "PTB_WTL" -> DEFCON_QUALS [style="bold"];
-    "./V /home/r/.bin/tw" -> DEFCON_QUALS [style="bold"];
-    "Straw Hat" -> DEFCON_QUALS [style="bold"];
-    "PPP" -> DEFCON_QUALS [style="bold"];
-    "Katzebin" -> DEFCON_QUALS [style="bold"];
-    "StarBugs" -> DEFCON_QUALS [style="bold"];
-    "Shellphish" -> DEFCON_QUALS [style="bold"];
-    "r3kapig" -> DEFCON_QUALS [style="bold"];
-    "DiceGuesser" -> DEFCON_QUALS [style="bold"];
-    "OSUSEC" -> DEFCON_QUALS [style="bold"];
-    "organizers" -> DEFCON_QUALS [style="bold"];
+    "perfect r✪✪✪t" -> DEFCON [style="bold"];
+    "Balsn.217@TSJ.tw" -> DEFCON [style="bold"];
+    "Sauercloud" -> DEFCON [style="bold"];
+    "Water Paddler" -> DEFCON [style="bold"];
+    "PTB_WTL" -> DEFCON [style="bold"];
+    "./V /home/r/.bin/tw" -> DEFCON [style="bold"];
+    "Straw Hat" -> DEFCON [style="bold"];
+    "MMM" -> DEFCON [style="bold"];
+    "Katzebin" -> DEFCON [style="bold"];
+    "StarBugs" -> DEFCON [style="bold"];
+    "Shellphish" -> DEFCON [style="bold"];
+    "r3kapig" -> DEFCON [style="bold"];
+    "DiceGuesser" -> DEFCON [style="bold"];
+    "OSUSEC" -> DEFCON [style="bold"];
+    "organizers" -> DEFCON [style="bold"];
   }
 
   // level 2 -> level 1
@@ -220,6 +223,12 @@ digraph teams {
     "polyflag" -> "organizers";
     "excusemewtf" -> "organizers";
     "the cr0wn" -> "organizers";
+
+    // MMM
+    "PPP" -> "MMM";
+    "The Duck" -> "MMM";
+    "Maple Bacon" -> "MMM";
+
   }
 
   // level 3 -> level 2
